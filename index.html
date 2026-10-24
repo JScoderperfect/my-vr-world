@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My First VR World</title>
+  <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene background="color: #10152f">
+    <a-sky color="#10152f"></a-sky>
+
+    <a-box position="0 1.5 -4"
+           rotation="0 35 0"
+           color="#7B2CFF"
+           animation="property: rotation;
+                      to: 0 395 0;
+                      loop: true;
+                      dur: 8000">
+    </a-box>
+
+    <a-sphere position="-2 1.5 -5"
+              radius="0.7"
+              color="#00D9FF">
+    </a-sphere>
+
+    <a-sphere position="2 1.5 -5"
+              radius="0.7"
+              color="#FF4D9D">
+    </a-sphere>
+
+    <a-plane rotation="-90 0 0"
+             width="30"
+             height="30"
+             color="#20264a">
+    </a-plane>
+
+    <a-entity position="0 1.6 0">
+      <a-camera look-controls wasd-controls></a-camera>
+    </a-entity>
+  </a-scene>
+</body>
+</html>
