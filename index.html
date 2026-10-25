@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,43 +8,25 @@
   <script src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>
 </head>
 <body>
-  <a-scene
-    vr-mode-ui="enabled: true"
-    renderer="precision: medium"
-    background="color: #00BFFF">
+  <a-scene background="color: #00BFFF">
 
-    <a-entity light="type: ambient; intensity: 1.5"></a-entity>
-    <a-entity light="type: directional; intensity: 2"
-              position="-2 4 3"></a-entity>
-
-    <a-box position="0 1.5 -3"
-           rotation="0 25 0"
-           color="#FF00FF"
-           material="shader: flat">
+    <a-box
+      position="0 1.5 -3"
+      color="#FF00FF"
+      material="shader: flat">
     </a-box>
 
-    <a-sphere position="-1.5 1.5 -3"
-              radius="0.6"
-              color="#FFFF00"
-              material="shader: flat">
+    <a-sphere
+      position="1.5 1.5 -3"
+      radius="0.6"
+      color="#FFFF00"
+      material="shader: flat">
     </a-sphere>
 
-    <a-sphere position="1.5 1.5 -3"
-              radius="0.6"
-              color="#00FF00"
-              material="shader: flat">
-    </a-sphere>
-
-    <a-plane position="0 0 -3"
-             rotation="-90 0 0"
-             width="20"
-             height="20"
-             color="#FFFFFF"
-             material="shader: flat">
-    </a-plane>
+    <a-sky color="#00BFFF"></a-sky>
 
     <a-entity position="0 1.6 0">
-      <a-camera look-controls></a-camera>
+      <a-camera></a-camera>
     </a-entity>
 
   </a-scene>
